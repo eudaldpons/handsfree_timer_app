@@ -2,7 +2,7 @@
 
 A hands-free gym workout timer that can be controlled with AirPods without interrupting your music playback.
 
-![AirPods Timer Main Screen](screenshots/timer.png)
+<img src="screenshots/timer.png" width="300" alt="AirPods Timer Main Screen">
 
 ## Features
 
@@ -22,7 +22,7 @@ AirPods Timer runs silently in the background while detecting AirPods controls:
 - **Double Tap**: Stop timer
 - **Long Press**: Reset timer
 
-![AirPods Timer Settings](screenshots/settings.png)
+<img src="screenshots/settings.png" width="300" alt="AirPods Timer Settings">
 
 ## Packages Used
 
@@ -47,7 +47,7 @@ This app is built with Flutter and uses the following packages:
 
 ## Getting Started
 
-1. Install the app from the App Store
+1. Install the app
 2. Connect your AirPods to your device
 3. Enable AirPods Control in the app
 4. Set your desired timer duration
@@ -65,10 +65,6 @@ AirPods Timer respects your privacy:
 - No data collection
 - No network access
 - No analytics
-
-## Support
-
-If you encounter any issues or have suggestions for improvements, please open an issue on GitHub or contact us at support@airpodstimer.com.
 
 ## License
 
