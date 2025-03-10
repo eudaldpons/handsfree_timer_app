@@ -106,6 +106,38 @@ class TimerPage extends ConsumerWidget {
             ),
 
             // Debug controls - only visible in debug mode
+            if (kDebugMode)
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton.icon(
+                      icon: const Icon(Icons.volume_off),
+                      label: const Text('Start Silent Audio'),
+                      onPressed: () {
+                        debugPrint('Manual silent audio start requested');
+                        audioService.startBackgroundAudio();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.orange,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    ElevatedButton.icon(
+                      icon: const Icon(Icons.stop),
+                      label: const Text('Stop Silent Audio'),
+                      onPressed: () {
+                        debugPrint('Manual silent audio stop requested');
+                        audioService.stopBackgroundAudio();
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.red,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
 
             // Main timer content
             Expanded(
